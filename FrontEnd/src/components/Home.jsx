@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import profileImage from '../assets/Images/profile.jpeg'; 
-import cvFile from '../assets/Pdf/karolinsherly.Pdf';    
+import cvFile from '../assets/Pdf/karolinsherly.pdf';    
 
 function Home() {
   return (
