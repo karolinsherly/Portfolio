@@ -1,0 +1,135 @@
+.home-section {
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: rgb(28, 93, 119);
+  text-shadow: 0px 2px 4px rgba(190, 221, 233, 0.4);
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: rgb(28, 93, 119);
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(21, 52, 65);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 1px solid rgb(28, 93, 119);
+  color: rgb(129, 165, 179);
+}
+
+.btn.secondary:hover {
+  background-color: rgb(28, 93, 119);
+  color: black;
+}
+
+.home-image {
+  flex: 1;
+  text-align: center;
+  max-width: 250px;
+  width: 100%;
+  margin: auto;
+}
+
+.home-image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  clip-path: circle(50% at 50% 50%);
+  border: 5px solid rgb(28, 93, 119);
+  box-shadow: 0 0 15px rgba(28, 93, 119, 0.6);
+  transition: 0.3s ease;
+  background-color: #0e2b39;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+}
+
+.social-links {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.social-links a {
+  color: rgb(129, 165, 179);
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: rgb(28, 93, 119);
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+}
+.home-text .tagline {
+  font-size: 1.2rem;
+  
+  color: rgb(139, 139, 170);
+  margin-bottom: 30px;
+}

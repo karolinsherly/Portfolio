@@ -1,0 +1,73 @@
+.skills-section {
+  padding: 60px 20px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: skyblue;
+  margin-bottom: 40px;
+  text-shadow: 0 0 5px rgba(135, 206, 235, 0.4);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: rgba(135, 206, 235, 0.05);
+  border: 1px solid rgba(135, 206, 235, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 130px;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(135, 206, 235, 0.3);
+}
+
+.skill-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  color: #d4f1ff;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #333;
+  height: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: skyblue;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+}
+
+.percentage-label {
+  font-size: 0.85rem;
+  color: white;
+  margin-top: 5px;
+}
