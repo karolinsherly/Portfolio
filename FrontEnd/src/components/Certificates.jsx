@@ -1,22 +1,32 @@
 import React from "react";
 import "./Certificates.css";
 
-// Example certificate list with image path
+// Updated certificate list
 const certificates = [
   {
-    title: "Full Stack Web Development",
-    description: "Udemy - MERN Stack Course",
-    image: "/certificates/fullstack.jpg", // 🔁 Replace with your image path
+    title: "3-Month Internship",
+    description: "Full Stack Web Development Internship",
+    image: "/certificates/internship3month.jpg",
   },
   {
-    title: "React Basics",
-    description: "Great Learning - React Introduction",
-    image: "/certificates/react.jpg",
+    title: "1-Month Internship",
+    description: "Full Stack Web Development Internship",
+    image: "/certificates/internship1month.jpg",
   },
   {
-    title: "JavaScript Mastery",
-    description: "Coursera - Advanced JS Course",
-    image: "/certificates/javascript.jpg",
+    title: "Python Programming",
+    description: "GUVI Platform - Python Course",
+    image: "/certificates/python.png",
+  },
+  {
+    title: "Network Essentials",
+    description: "Naan Mudhalvan - Career Skills Training",
+    image: "/certificates/network.jpg",
+  },
+  {
+    title: "Machine Learning Workshop",
+    description: "2-day Workshop on Machine Learning with Python",
+    image: "/certificates/mlworkshop.jpg",
   },
 ];
 
