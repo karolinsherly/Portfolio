@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Certificates.css";
 
-// Updated certificate list
 const certificates = [
   {
     title: "3-Month Internship",
@@ -31,6 +30,19 @@ const certificates = [
 ];
 
 const Certificates = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (imgSrc) => {
+  setSelectedImage(imgSrc);
+  document.body.classList.add("modal-open");
+};
+
+const closeImage = () => {
+  setSelectedImage(null);
+  document.body.classList.remove("modal-open");
+};
+
+
   return (
     <div className="certificates-section">
       <h1 className="certificates-title">My Certificates</h1>
@@ -41,12 +53,21 @@ const Certificates = () => {
               src={cert.image}
               alt={cert.title}
               className="certificate-image"
+              onClick={() => openImage(cert.image)}
             />
             <h2>{cert.title}</h2>
             <p>{cert.description}</p>
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div className="image-modal" onClick={closeImage}>
+          <span className="close">&times;</span>
+          <img src={selectedImage} alt="Full View" className="modal-image" />
+        </div>
+      )}
     </div>
   );
 };

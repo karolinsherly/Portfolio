@@ -5,12 +5,12 @@ const projects = [
   {
     title: "QR Code Attendance System",
     description: "Mark attendance using QR code scanning.",
-    link: "https://github.com/yourusername/qr-attendance", // 🔁 Replace with your real link
+    link: "https://github.com/yourusername/qr-attendance", 
   },
   {
     title: "E-Commerce Website",
     description: "Online store with cart, wishlist, and admin panel.",
-    link: "https://your-ecom-demo.netlify.app", // 🔁 Replace with your real link
+    link: "https://github.com/karolinsherly/MyntraClone.git",
   },
 ];
 
